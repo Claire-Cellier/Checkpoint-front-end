@@ -2,6 +2,7 @@ import { useQuery } from '@apollo/client';
 import { useParams } from 'react-router-dom';
 import { GET_COUNTRY_BY_CODE } from '../../api/GraphQLRequests';
 import { Country } from '../../types';
+import classes from './CountryDetail.module.scss';
 
 export function CountryDetail() {
   const { code } = useParams<{ code: string }>();
@@ -20,8 +21,8 @@ export function CountryDetail() {
   const { country } = data;
 
   return (
-    <div className="country-detail">
-      <div>{country.emoji}</div>
+    <div className={classes['country-detail']}>
+      <p>{country.emoji}</p>
       <p>Name : {country.name} ({country.code})</p>
       <p>Continent : {country.continent.name}</p>
     </div>

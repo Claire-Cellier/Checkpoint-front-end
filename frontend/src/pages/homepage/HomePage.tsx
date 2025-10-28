@@ -16,9 +16,11 @@ export function HomePage() {
 
   return (
     <div className={classes['home-page']}>
-      <AddCountryForm onAdded={(newCountry) => {
+      <div className={classes['country-form']}>
+         <AddCountryForm onAdded={(newCountry) => {
   setCountries(prev => [...prev, newCountry]);
 }}/>
+      </div>
       <div className={classes['country-list']}>
         {data?.countries.map((country) => (
           <CountryCard key={country.id} country={country} />

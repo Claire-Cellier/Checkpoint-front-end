@@ -29,7 +29,6 @@ export function AddCountryForm({ onAdded }: Props) {
   };
 
   return (
-    <div className={classes["form-container"]}>
       <form onSubmit={handleSubmit} >
         <div className={classes["form-input"]}>
         <label>Name</label>
@@ -66,6 +65,5 @@ export function AddCountryForm({ onAdded }: Props) {
         </button>
         {error && <p>{error.message}</p>}
       </form>
-    </div>
   );
 }
