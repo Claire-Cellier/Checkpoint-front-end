@@ -10,7 +10,7 @@ export function CountryCard({ country }: CountryCardProps) {
   const navigate = useNavigate();
 
     const handleClick = () => {
-        navigate(`/country/${country.id}`);
+        navigate(`/country/${country.code}`);
     };
     
   return (
