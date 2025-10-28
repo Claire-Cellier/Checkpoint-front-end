@@ -1,6 +1,18 @@
 .header {
     background-color: #F7136B;
-    padding: 20px;
+    padding: 1rem;
     color: white;
     text-align: center;
+}
+
+a {
+  color: #ffffff;
+  font-weight: none;
+  text-decoration: none;
+  
+}
+
+a:hover {
+  font-weight: bold;
+  text-decoration: none; 
 }
